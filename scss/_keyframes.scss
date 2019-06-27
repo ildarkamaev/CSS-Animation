@@ -12,57 +12,56 @@
 
 @keyframes animateBox {
     0% {
-        @include scale_brs(0, $brs, 1);
+        @include scale_brs(0, 35px);
         // transform: scale(0);
-        // border-radius: $brs;
+        // border-radius: 35px;
     }
     2.5% {
-        @include scale_brs(1.1, 10em, 1);
+        @include scale_brs(1.1, 10em);
         // transform: scale(1.1);
         // border-radius: 10em;
     }
     5% {
-        @include scale_brs(1, $brs, 1);
+        @include scale_brs(1, 35px);
         // transform: scale(1);
-        // border-radius: $brs;
+        // border-radius: 35px;
     }
     96% {
-        @include scale_brs(1, $brs, 1);
+        @include scale_brs(1, 35px);
         // transform: scale(1);
-        // border-radius: $brs;
+        // border-radius: 35px;
     }
     98% {
-        @include scale_brs(1.1, 10em, 1);
+        @include scale_brs(1.1, 10em);
         // transform: scale(1.1);
         // border-radius: 10em;
     }
     100% {
-        @include scale_brs(0, $brs, 1);
+        @include scale_brs(0, 35px);
         // transform: scale(0);
-        // border-radius: $brs;
+        // border-radius: 35px;
     }
 }
 
 @keyframes animateBorder {
     0% {
-        @include scale_brs(0, 10em, 0);
+        @include scale_brs(0, 10em);
         // border-radius: 10em;
         // transform: scale(0);
-        // opacity: 0;
+        opacity: 0;
     }
     2% {
-        @include scale_brs(0, 10em, 0);
-        // opacity: 0;
+        opacity: 0;
     }
     18% {
-        @include scale_brs(0, 10em, 1);
-        // border-radius: $brs;
+        @include scale_brs(1, 35px);
+        // border-radius: 35px;
         // transform: scale(1);
-        // opacity: 1;
+        opacity: 1;
     }
     90% {
-        @include scale_brs(1, $brs, 1);
-        // border-radius: $brs;
+        @include scale_brs(1, 35px);
+        // border-radius: 35px;
         // transform: scale(1);
     }
 }
