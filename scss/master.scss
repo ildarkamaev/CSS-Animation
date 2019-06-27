@@ -19,7 +19,7 @@ body {
     width: $box-h;
     // et taust oleks nähtamatu
     overflow: hidden;
-    border-radius: 35px;
+    border-radius: $brs;
     position: absolute;
     // top: 50%;
     // left: 50%;
@@ -58,7 +58,7 @@ body {
     &-border {
         width: 74%;
         height: 74%;
-        border-radius: 35px;
+        border-radius: $brs;
         margin-top: -37%;
         margin-left: -37%;
         animation: animateBorder $duration infinite alternate;

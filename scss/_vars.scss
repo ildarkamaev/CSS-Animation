@@ -5,3 +5,9 @@ $color3: #f66e48;
 $box-h: 10rem;
 $view-h: $box-h * 10;
 $duration: 5s;
+$brs: 2rem;
+@mixin scale_brs_op($scale, $border-radius, $opacity) {
+    transform: scale($scale);
+    border-radius: $border-radius;
+    opacity: $opacity;
+}
