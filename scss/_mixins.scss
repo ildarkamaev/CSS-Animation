@@ -1,0 +1,5 @@
+@mixin scale_brs_op($scale, $border-radius, $opacity) {
+    transform: scale($scale);
+    border-radius: $border-radius;
+    opacity: $opacity;
+}
