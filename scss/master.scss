@@ -15,23 +15,16 @@ body {
 }
 
 .box {
-    height: $box-h;
-    width: $box-h;
-    // et taust oleks nähtamatu
+    height: $box-size;
+    width: $box-size;
     overflow: hidden;
-    border-radius: 35px;
+    border-radius: $brs;
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // margin-top: -$box-h / 2;
-    // margin-left: -$box-h / 2;
     animation: animateBox $duration * 2 infinite alternate;
     &::after {
         position: relative;
         content: '';
         display: block;
-        // top: 0;
-        // left: 0;
         width: 100%;
         height: $view-h;
         background: linear-gradient( $origin, $color1 0%, $color2 25%, $color3 50%, $color2 75%, $color1 100%);
@@ -48,7 +41,7 @@ body {
         z-index: 2;
         &.logo-flash {
             border: 5px solid #fff;
-            border-radius: 10em;
+            border-radius: $brs * 3;
             right: 23%;
             top: 23%;
             left: auto;
@@ -58,15 +51,15 @@ body {
     &-border {
         width: 74%;
         height: 74%;
-        border-radius: 35px;
-        margin-top: -37%;
+        border-radius: $brs;
+        margin-top: -3.7rem;
         margin-left: -37%;
         animation: animateBorder $duration infinite alternate;
     }
     &-circle {
         width: 48%;
         height: 48%;
-        border-radius: 10em;
+        border-radius: $brs * 3;
         margin-left: -24%;
         margin-top: -24%;
         animation: animateCircle $duration infinite alternate;

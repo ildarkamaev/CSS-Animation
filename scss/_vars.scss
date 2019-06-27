@@ -2,6 +2,17 @@ $origin: 135deg;
 $color1: #5335cf;
 $color2: #de005e;
 $color3: #f66e48;
-$box-h: 10rem;
-$view-h: $box-h * 10;
+$box-size: 10rem;
+$view-h: $box-size * 10;
 $duration: 5s;
+$brs: 2rem;
+@mixin scale_brs($scale, $border-radius, $opacity) {
+    transform: scale($scale);
+    border-radius: $border-radius;
+    opacity: $opacity;
+}
+
+@mixin scale_opacity($scale, $opacity) {
+    transform: scale($scale);
+    opacity: $opacity;
+}
