@@ -1,0 +1,105 @@
+@keyframes animateBG {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: $box-h - $view-h;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes animateBox {
+    0% {
+        transform: scale(0);
+        border-radius: 35px;
+    }
+    2.5% {
+        transform: scale(1.1);
+        border-radius: 10em;
+    }
+    5% {
+        transform: scale(1);
+        border-radius: 35px;
+    }
+    96% {
+        transform: scale(1);
+        border-radius: 35px;
+    }
+    98% {
+        transform: scale(1.1);
+        border-radius: 10em;
+    }
+    100% {
+        transform: scale(0);
+        border-radius: 35px;
+    }
+}
+
+@keyframes animateBorder {
+    0% {
+        border-radius: 10em;
+        transform: scale(0);
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+    }
+    18% {
+        border-radius: 35px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    90% {
+        border-radius: 35px;
+        transform: scale(1);
+    }
+}
+
+@keyframes animateCircle {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    5% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    15% {
+        transform: scale(1);
+    }
+    95% {
+        transform: scale(1);
+        background-color: transparent;
+    }
+    97% {
+        transform: scale(1.2);
+        background: #fff;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animateFlash {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
