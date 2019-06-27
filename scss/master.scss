@@ -17,21 +17,14 @@ body {
 .box {
     height: $box-h;
     width: $box-h;
-    // et taust oleks nähtamatu
     overflow: hidden;
     border-radius: $brs;
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // margin-top: -$box-h / 2;
-    // margin-left: -$box-h / 2;
     animation: animateBox $duration * 2 infinite alternate;
     &::after {
         position: relative;
         content: '';
         display: block;
-        // top: 0;
-        // left: 0;
         width: 100%;
         height: $view-h;
         background: linear-gradient( $origin, $color1 0%, $color2 25%, $color3 50%, $color2 75%, $color1 100%);
